@@ -71,7 +71,6 @@ div.cards div.card.big {
 div.cards div.card h2 {
   text-align: center;
   font-weight: 900;
-  text-transform: capitalize;
   font-style: italic;
   font-size: 2.5rem;
   margin-bottom: 15px;
