@@ -22,18 +22,18 @@ body {
 
 /* SERVICES */
 
-section#services {
+section.services {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 50px;
 }
 
-section#services h1 {
+section.services h1 {
   font-size: 1.8rem;
 }
 
-section#services div#cards {
+section.services div.cards {
   margin-top: 30px;
   display: flex;
   align-items: center;
@@ -41,7 +41,7 @@ section#services div#cards {
   width: 100%;
 }
 
-section#services div#cards div.card {
+div.cards div.card {
   padding: 30px;
   border-radius: 45px;
   background-color: var(--blue);
@@ -56,19 +56,19 @@ section#services div#cards div.card {
   transition: transform .2s ease-out, box-shadow .2s ease-out;
 }
 
-section#services div#cards div.card:hover {
+div.cards div.card:hover {
   transform: scale(1.05);
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
 }
 
-section#services div#cards div.card.big {
+div.cards div.card.big {
   width: 400px;
   background-image: linear-gradient(to right bottom, var(--light-blue), var(--blue));
   border: 3px solid var(--green);
   height: auto;
 }
 
-section#services div#cards div.card h2 {
+div.cards div.card h2 {
   text-align: center;
   font-weight: 900;
   text-transform: capitalize;
@@ -77,99 +77,99 @@ section#services div#cards div.card h2 {
   margin-bottom: 15px;
 }
 
-section#services div#cards div.card.big h2 {
+div.cards div.card.big h2 {
   font-size: 2.8rem;
 }
 
-section#services div#cards div.card h2 span {
+div.cards div.card h2 span {
   display: block;
   text-transform: uppercase;
   font-size: 1rem;
   letter-spacing: 1.5px;
 }
 
-section#services div#cards div.card.big h2 span {
+div.cards div.card.big h2 span {
   font-size: 1.3rem;
 }
 
-section#services div#cards div.card ul {
+div.cards div.card ul {
   list-style: none;
   margin: 20px 10px 40px;
 }
 
-section#services div#cards div.card ul li + li {
+div.cards div.card ul li + li {
   margin-top: 15px;
 }
 
-section#services div#cards div.card ul li h4 {
+div.cards div.card ul li h4 {
   text-transform: uppercase;
   font-weight: 300;
   font-size: 1rem;
 }
 
-section#services div#cards div.card.big ul li h4 {
+div.cards div.card.big ul li h4 {
   font-size: 1.3rem;
 }
 
-section#services div#cards div.card:last-child ul li h4 {
+div.cards div.card:last-child ul li h4 {
   font-size: 1.8rem;
 }
 
-section#services div#cards div.card ul li h4 span:first-child {
+div.cards div.card ul li h4 span:first-child {
   display: block;
 }
 
-section#services div#cards div.card ul li h4 b {
+div.cards div.card ul li h4 b {
   font-weight: bold;
 }
 
-section#services div#cards div.card ul li h4 span:last-child {
+div.cards div.card ul li h4 span:last-child {
   font-size: 0.8rem;
   text-transform: lowercase;
   font-weight: 400;
 }
 
-section#services div#cards div.card.big ul li h4 span:last-child {
+div.cards div.card.big ul li h4 span:last-child {
   font-size: 1.1rem;
 }
 
-section#services div#cards div.card h3 {
+div.cards div.card h3 {
   font-weight: 900;
   text-transform: uppercase;
   margin-left: 20px;
   font-size: 2rem;
 }
 
-section#services div#cards div.card.big h3 {
+div.cards div.card.big h3 {
   font-size: 2.3rem;
 }
 
-section#services div#cards div.card h3 span:first-child {
+div.cards div.card h3 span:first-child {
   display: block;
   font-size: 0.8rem;
 }
 
-section#services div#cards div.card h3 span:last-child {
+div.cards div.card h3 span:last-child {
   font-size: 1.2rem;
   font-weight: 700;
 }
 
-section#services div#cards div.card section {
+div.cards div.card section {
   text-align: center;
   margin-top: 40px;
   font-weight: bold;
 }
 
-section#services div#cards div.card section p:first-child {
+div.cards div.card section p:first-child {
   font-size: 0.7rem;
 }
 
-section#services div#cards div.card section p:last-child {
+div.cards div.card section p:last-child {
   font-size: 0.8rem;
   margin-top: 10px;
 }
 
-section#services footer p {
+section.services footer p {
   margin-top: 30px;
   font-size: 2rem;
   font-style: italic;
