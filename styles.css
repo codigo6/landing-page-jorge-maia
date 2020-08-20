@@ -15,33 +15,172 @@
 
 body {
   background-color: white;
-  background-image:  url('./assets/background1.png');
+  background-image:  url('./assets/bg-papel.png');
   background-repeat: no-repeat;
   background-size: 100% auto;
+  background-position: fixed;
   color: #111;
   /* TODO: adicionar a font correta */
   font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
 }
 
+/* HEADER */
 
-img.header {
+
+header {
+  height: 700px;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 0 10px;
 }
 
-img.instagram {
+header span {
+  text-align: center;
+  font-weight: bold;
+}
+
+header span#connect {
+  transform: rotate(-7deg);
+}
+
+header span{
+  text-align: center;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+header span > span {
+  display: block;
+}
+
+header img {
   position: absolute;
-  top: 0;
-  left: 0;
+  height: 100px;
+}
+
+header img#like1 {
+  top: 300px;
+  left: 270px;
+  height: 150px;
+  width: 150px;
+  transform: rotate(-7deg);
+  z-index: 1;
+}
+
+header img#like2 {
+  top: -150px;
+  left: -250px;
+  height: 500px;
+  width: 500px;
+  transform: rotate(-15deg);
+  z-index: 1;
+  filter: blur(5px);
+}
+
+header img#like3 {
+  top: 400px;
+  left: -20px;
+  height: 300px;
+  width: 300px;
+  filter: blur(2px);
+  z-index: 1;
+}
+
+header img#heart1 {
+  top: 300px;
+  right: 300px;
+  height: 120px;
+  width: 120px;
+  transform: rotate(7deg);
+  z-index: 1;
+}
+
+header img#heart2 {
+  top: 300px;
+  right: -280px;
+  height: 500px;
+  width: 500px;
+  transform: rotate(-25deg);
+  z-index: 1;
+  filter: blur(5px)
+}
+
+header img#support {
+  top: 20px;
+  right: 50px;
+  height: 250px;
+  width: 250px;
+  z-index: 1;
+}
+
+header img#social {
+  opacity: 1;
+  top: 0px;
   height: auto;
+  width: 1000px;
+}
+
+
+/* INSTAGRAM */
+
+section.instagram {
+  position: relative;
+  background: white url('./assets/bginsta.png') no-repeat;
+  background-size: cover;
+  height: 800px;
+  text-align: center;
   width: 100%;
-  z-index: -1;
+}
+
+section.instagram img {
+  margin-top: -25px;
+  height: 850px;
+  box-shadow: 0.5px 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+section.instagram h1 {
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  text-align: right;
+  color: white;
+}
+
+section.instagram h1 span {
+  display: block;
+}
+
+section.instagram h1 span + span {
+  margin-top: 5px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+section.instagram h1 span + span img {
+  height: 35px;
+  width: 35px;
+  margin-right: 5px;
+}
+
+section.instagram h1 span:first-child {
+  font-size: 2.5rem;
+}
+
+section.instagram h1 span:not(:first-child) {
+  font-weight: 300;
+  font-size: 1.8rem;
 }
 
 /* SERVICES */
 
 section.services {
-  position: absolute;
-  top: 190vh;
   width: 100%;
   display: flex;
   flex-direction: column;
