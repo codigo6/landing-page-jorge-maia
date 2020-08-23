@@ -1,41 +1,40 @@
 * {
-	margin: 0;
-	padding: 0;
-	outline: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
 }
 
-
 :root {
-	--light-blue: #4376B6;
-	--blue: #294691;
+  font-size: calc(0.2em + 1vw);
+
+  --light-blue: #4376b6;
+  --blue: #294691;
   --green: #229942;
 }
 
-
 body {
   background-color: white;
-  background-image:  url('./assets/bg-papel.png');
+  background-image: url("./assets/bg-papel.png");
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: fixed;
   color: #111;
   /* TODO: adicionar a font correta */
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   overflow-x: hidden;
 }
 
 /* HEADER */
 
-
 header {
-  height: 700px;
+  height: 105vh;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding: 40px 0 10px;
+  padding: 2.3em 0 0.8em;
 }
 
 header span {
@@ -47,12 +46,12 @@ header span#connect {
   transform: rotate(-7deg);
 }
 
-header span{
+header span {
   text-align: center;
   font-weight: 900;
   font-style: italic;
   font-size: 1.8rem;
-  margin-bottom: 15px;
+  margin-bottom: 1em;
 }
 
 header span > span {
@@ -61,61 +60,61 @@ header span > span {
 
 header img {
   position: absolute;
-  height: 100px;
+  height: 6em;
 }
 
 header img#like1 {
-  top: 300px;
-  left: 270px;
-  height: 150px;
-  width: 150px;
+  top: 18.75em;
+  left: 16.87em;
+  height: 9.3em;
+  width: 9.3em;
   transform: rotate(-7deg);
   z-index: 1;
 }
 
 header img#like2 {
-  top: -150px;
-  left: -250px;
-  height: 500px;
-  width: 500px;
+  top: -9.3em;
+  left: -16.87em;
+  height: 32.25em;
+  width: 32.25em;
   transform: rotate(-15deg);
   z-index: 1;
   filter: blur(5px);
 }
 
 header img#like3 {
-  top: 400px;
-  left: -20px;
-  height: 300px;
-  width: 300px;
+  top: 25em;
+  left: -1.2em;
+  height: 18.75em;
+  width: 18.75em;
   filter: blur(2px);
   z-index: 1;
 }
 
 header img#heart1 {
-  top: 300px;
-  right: 300px;
-  height: 120px;
-  width: 120px;
+  top: 18.75em;
+  right: 18.75em;
+  height: 7.5em;
+  width: 7.5em;
   transform: rotate(7deg);
   z-index: 1;
 }
 
 header img#heart2 {
-  top: 300px;
-  right: -280px;
-  height: 500px;
-  width: 500px;
+  top: 18.75em;
+  right: -17.5em;
+  height: 32.25em;
+  width: 32.25em;
   transform: rotate(-25deg);
   z-index: 1;
-  filter: blur(5px)
+  filter: blur(5px);
 }
 
 header img#support {
-  top: 20px;
-  right: 50px;
-  height: 250px;
-  width: 250px;
+  top: 1.2em;
+  right: 3.1em;
+  height: 15.6em;
+  width: 15.6em;
   z-index: 1;
 }
 
@@ -123,37 +122,33 @@ header img#social {
   opacity: 1;
   top: 0px;
   height: auto;
-  width: 1000px;
+  max-width: 1000px;
+  width: 100%;
 }
-
 
 /* INSTAGRAM */
 
 section.instagram {
   position: relative;
-  background: white url('./assets/bginsta.png') no-repeat;
+  background: white url("./assets/bginsta.png") no-repeat;
   background-size: cover;
-  height: 800px;
+  height: 50em;
   text-align: center;
   width: 100%;
 }
 
 section.instagram img {
-  margin-top: -25px;
-  height: 850px;
+  margin-top: -1.6em;
+  height: 52em;
   box-shadow: 0.5px 10px 30px rgba(0, 0, 0, 0.5);
 }
 
 section.instagram h1 {
   position: absolute;
-  bottom: 50px;
-  right: 50px;
+  bottom: 2em;
+  right: 2em;
   text-align: right;
   color: white;
-}
-
-section.instagram h1 span {
-  display: block;
 }
 
 section.instagram h1 span + span {
@@ -164,8 +159,8 @@ section.instagram h1 span + span {
 }
 
 section.instagram h1 span + span img {
-  height: 35px;
-  width: 35px;
+  height: 1em;
+  width: 1em;
   margin-right: 5px;
 }
 
@@ -185,7 +180,7 @@ section.services {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 50px;
+  padding: 3.3em;
 }
 
 section.services h1 {
@@ -193,7 +188,7 @@ section.services h1 {
 }
 
 section.services div.cards {
-  margin-top: 30px;
+  margin-top: 1.5em;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -204,15 +199,15 @@ div.cards div.card {
   padding: 30px;
   border-radius: 45px;
   background-color: var(--blue);
-  width: 360px;
+  width: 22.5em;
   color: white;
-  height: 480px;
+  height: 30em;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   cursor: pointer;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
-  transition: transform .2s ease-out, box-shadow .2s ease-out;
+  transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
 }
 
 div.cards div.card:hover {
@@ -221,8 +216,12 @@ div.cards div.card:hover {
 }
 
 div.cards div.card.big {
-  width: 400px;
-  background-image: linear-gradient(to right bottom, var(--light-blue), var(--blue));
+  width: 23em;
+  background-image: linear-gradient(
+    to right bottom,
+    var(--light-blue),
+    var(--blue)
+  );
   border: 3px solid var(--green);
   height: auto;
 }
@@ -252,11 +251,11 @@ div.cards div.card.big h2 span {
 
 div.cards div.card ul {
   list-style: none;
-  margin: 20px 10px 40px;
+  margin: 1.3em 0.6em 2.3em;
 }
 
 div.cards div.card ul li + li {
-  margin-top: 15px;
+  margin-top: 1em;
 }
 
 div.cards div.card ul li h4 {
@@ -294,7 +293,7 @@ div.cards div.card.big ul li h4 span:last-child {
 div.cards div.card h3 {
   font-weight: 900;
   text-transform: uppercase;
-  margin-left: 20px;
+  margin-left: 1.2em;
   font-size: 2rem;
 }
 
@@ -314,7 +313,7 @@ div.cards div.card h3 span:last-child {
 
 div.cards div.card section {
   text-align: center;
-  margin-top: 40px;
+  margin-top: 2.3em;
   font-weight: bold;
 }
 
@@ -328,10 +327,88 @@ div.cards div.card section p:last-child {
 }
 
 section.services footer p {
-  margin-top: 30px;
+  margin-top: 1.9em;
   font-size: 2rem;
   font-style: italic;
 }
 
+@media (max-width: 1060px) {
+  section.services div.cards {
+    flex-direction: column;
+  }
 
+  div.cards div.card + div.card {
+    margin-top: 1em;
+  }
+}
 
+@media (max-width: 1200px) {
+  header img#like2 {
+    top: -16em;
+  }
+
+  header img#like1 {
+    display: none;
+  }
+
+  header img#heart1 {
+    display: none;
+  }
+
+  section.instagram {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+  }
+
+  section.instagram h1 span + span {
+    justify-content: center;
+  }
+
+  section.instagram img {
+    height: 40em;
+    width: 22em;
+  }
+
+  section.instagram h1 {
+    position: relative;
+    bottom: 0em;
+    right: 0em;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
+}
+
+@media (max-width: 790px) {
+  :root {
+    font-size: calc(0.5em + 1vw);
+  }
+
+  header img#like2 {
+    height: 25em;
+    width: 25em;
+    top: -13em;
+  }
+
+  header img#support {
+    top: 1.2em;
+    right: -8em;
+    height: 13em;
+    width: 13em;
+    z-index: 1;
+  }
+}
+
+@media (max-width: 650px) {
+  header img#social {
+    top: 1.5em;
+  }
+
+  header img#heart2 {
+    height: 25em;
+    width: 25em;
+  }
+}
