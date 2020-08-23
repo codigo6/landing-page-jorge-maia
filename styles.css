@@ -51,6 +51,7 @@ header span {
   font-weight: 900;
   font-style: italic;
   font-size: 1.8rem;
+  margin-bottom: 1em;
 }
 
 header span > span {
@@ -82,7 +83,7 @@ header img#like2 {
 }
 
 header img#like3 {
-  top: 25em;
+  top: 22em;
   left: -1.2em;
   height: 18.75em;
   width: 18.75em;
