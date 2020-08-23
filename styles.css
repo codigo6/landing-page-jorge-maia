@@ -379,7 +379,7 @@ section.services footer p {
 
   section.instagram h1 {
     text-align: center;
-    padding: .8em 0;
+    padding: 0.8em 0;
     margin: auto;
   }
 
@@ -393,7 +393,7 @@ section.services footer p {
 
   section.instagram h1 span:not(:first-child) {
     font-size: 1.3rem;
-  } 
+  }
 }
 
 @media (max-width: 790px) {
@@ -422,14 +422,15 @@ section.services footer p {
   }
 
   .header img#heart2 {
-    height: 20em;
-    width: 20em;
+    top: 20em;
+    height: 16em;
+    width: 16em;
     right: -10em;
   }
 
   .header img#like3 {
-    top: 20em;
-    height: 15.75em;
-    width: 15.75em;
+    top: 22em;
+    height: 12.75em;
+    width: 12.75em;
   }
 }
