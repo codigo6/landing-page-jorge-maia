@@ -30,11 +30,13 @@ body {
 header {
   height: 100vh;
   width: 100%;
+  max-width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   padding: 2.3em 0 0.8em;
+  overflow-x: hidden;
 }
 
 header span {
@@ -135,6 +137,7 @@ section.instagram {
   height: 50em;
   text-align: center;
   width: 100%;
+  max-width: 100vw;
 }
 
 section.instagram img {
@@ -176,6 +179,7 @@ section.instagram h1 span:not(:first-child) {
 /* SERVICES */
 
 section.services {
+  max-width: 100vw;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -417,7 +421,14 @@ section.services footer p {
   }
 
   header img#heart2 {
-    height: 25em;
-    width: 25em;
+    height: 20em;
+    width: 20em;
+    right: -10em;
+  }
+
+  header img#like3 {
+    top: 20em;
+    height: 15.75em;
+    width: 15.75em;
   }
 }
