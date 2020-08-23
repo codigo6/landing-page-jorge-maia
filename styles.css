@@ -22,7 +22,6 @@ body {
   color: #111;
   /* TODO: adicionar a font correta */
   font-family: "Roboto", sans-serif;
-  /* overflow: hidden; */
 }
 
 /* HEADER */
@@ -160,9 +159,6 @@ section.instagram img {
 }
 
 section.instagram h1 {
-  /* position: absolute;
-  bottom: 2em;
-  right: 2em; */
   text-align: right;
   color: white;
   align-self: flex-end;
@@ -372,39 +368,6 @@ section.services footer p {
   .header img#heart1 {
     display: none;
   }
-
-  /* section.instagram h1 span + span {
-    justify-content: center;
-  }
-
-  section.instagram img {
-    height: 40em;
-    width: 22em;
-  }
-
-  section.instagram {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-  }
-
-  .section.instagram h1 {
-    position: relative;
-    bottom: 0em;
-    right: 0em;
-    text-align: center;
-    margin-top: 1em;
-    margin-bottom: 1em;
-  }
-
-  section.instagram h1 span:first-child {
-    font-size: 2rem;
-  }
-
-  section.instagram h1 span:not(:first-child) {
-    font-size: 1.3rem;
-  } */
 
   section.instagram > div {
     width: auto;
