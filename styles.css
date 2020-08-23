@@ -22,12 +22,18 @@ body {
   color: #111;
   /* TODO: adicionar a font correta */
   font-family: "Roboto", sans-serif;
-  overflow-x: hidden;
+  /* overflow: hidden; */
 }
 
 /* HEADER */
 
 header {
+  overflow: hidden;
+  max-height: 100vh;
+}
+
+.header {
+  position: relative;
   height: 100vh;
   width: 100%;
   max-width: 100vw;
@@ -36,19 +42,18 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 2.3em 0 0.8em;
-  overflow-x: hidden;
 }
 
-header span {
+.header span {
   text-align: center;
   font-weight: bold;
 }
 
-header span#connect {
+.header span#connect {
   transform: rotate(-7deg);
 }
 
-header span {
+.header span {
   text-align: center;
   font-weight: 900;
   font-style: italic;
@@ -56,16 +61,16 @@ header span {
   margin-bottom: 1em;
 }
 
-header span > span {
+.header span > span {
   display: block;
 }
 
-header img {
+.header img {
   position: absolute;
   height: 6em;
 }
 
-header img#like1 {
+.header img#like1 {
   top: 18.75em;
   left: 16.87em;
   height: 9.3em;
@@ -74,7 +79,7 @@ header img#like1 {
   z-index: 1;
 }
 
-header img#like2 {
+.header img#like2 {
   top: -9.3em;
   left: -16.87em;
   height: 32.25em;
@@ -84,7 +89,7 @@ header img#like2 {
   filter: blur(5px);
 }
 
-header img#like3 {
+.header img#like3 {
   top: 22em;
   left: -1.2em;
   height: 18.75em;
@@ -93,7 +98,7 @@ header img#like3 {
   z-index: 1;
 }
 
-header img#heart1 {
+.header img#heart1 {
   top: 18.75em;
   right: 18.75em;
   height: 7.5em;
@@ -102,7 +107,7 @@ header img#heart1 {
   z-index: 1;
 }
 
-header img#heart2 {
+.header img#heart2 {
   top: 18.75em;
   right: -17.5em;
   height: 32.25em;
@@ -112,7 +117,7 @@ header img#heart2 {
   filter: blur(5px);
 }
 
-header img#support {
+.header img#support {
   top: 1.2em;
   right: 3.1em;
   height: 15.6em;
@@ -120,7 +125,7 @@ header img#support {
   z-index: 1;
 }
 
-header img#social {
+.header img#social {
   opacity: 1;
   top: 0px;
   height: auto;
@@ -131,27 +136,37 @@ header img#social {
 /* INSTAGRAM */
 
 section.instagram {
-  position: relative;
   background: white url("./assets/bginsta.png") no-repeat;
   background-size: cover;
-  height: 50em;
+  max-height: 50em;
   text-align: center;
   width: 100%;
   max-width: 100vw;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+section.instagram > div {
+  display: flex;
+  justify-content: space-around;
+  width: 65%;
 }
 
 section.instagram img {
   margin-top: -1.6em;
-  height: 52em;
+  max-height: 40em;
+  max-width: 25em;
   box-shadow: 0.5px 10px 30px rgba(0, 0, 0, 0.5);
 }
 
 section.instagram h1 {
-  position: absolute;
+  /* position: absolute;
   bottom: 2em;
-  right: 2em;
+  right: 2em; */
   text-align: right;
   color: white;
+  align-self: flex-end;
+  padding: 0 0 1em 1em;
 }
 
 section.instagram h1 span + span {
@@ -179,7 +194,6 @@ section.instagram h1 span:not(:first-child) {
 /* SERVICES */
 
 section.services {
-  max-width: 100vw;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -347,26 +361,19 @@ section.services footer p {
 }
 
 @media (max-width: 1200px) {
-  header img#like2 {
+  .header img#like2 {
     top: -16em;
   }
 
-  header img#like1 {
+  .header img#like1 {
     display: none;
   }
 
-  header img#heart1 {
+  .header img#heart1 {
     display: none;
   }
 
-  section.instagram {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      align-items: center;
-  }
-
-  section.instagram h1 span + span {
+  /* section.instagram h1 span + span {
     justify-content: center;
   }
 
@@ -375,7 +382,14 @@ section.services footer p {
     width: 22em;
   }
 
-  section.instagram h1 {
+  section.instagram {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .section.instagram h1 {
     position: relative;
     bottom: 0em;
     right: 0em;
@@ -384,6 +398,31 @@ section.services footer p {
     margin-bottom: 1em;
   }
 
+  section.instagram h1 span:first-child {
+    font-size: 2rem;
+  }
+
+  section.instagram h1 span:not(:first-child) {
+    font-size: 1.3rem;
+  } */
+
+  section.instagram > div {
+    width: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-around;
+    margin: auto;
+  }
+
+  section.instagram h1 {
+    text-align: center;
+    padding: .8em 0;
+    margin: auto;
+  }
+
+  section.instagram h1 span + span {
+    justify-content: center;
+  }
 
   section.instagram h1 span:first-child {
     font-size: 2rem;
@@ -391,8 +430,7 @@ section.services footer p {
 
   section.instagram h1 span:not(:first-child) {
     font-size: 1.3rem;
-  }
-
+  } 
 }
 
 @media (max-width: 790px) {
@@ -400,13 +438,13 @@ section.services footer p {
     font-size: calc(0.5em + 1vw);
   }
 
-  header img#like2 {
+  .header img#like2 {
     height: 25em;
     width: 25em;
     top: -13em;
   }
 
-  header img#support {
+  .header img#support {
     top: 1.2em;
     right: -8em;
     height: 13em;
@@ -416,17 +454,17 @@ section.services footer p {
 }
 
 @media (max-width: 650px) {
-  header img#social {
+  .header img#social {
     top: 2em;
   }
 
-  header img#heart2 {
+  .header img#heart2 {
     height: 20em;
     width: 20em;
     right: -10em;
   }
 
-  header img#like3 {
+  .header img#like3 {
     top: 20em;
     height: 15.75em;
     width: 15.75em;
