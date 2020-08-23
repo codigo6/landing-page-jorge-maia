@@ -28,7 +28,7 @@ body {
 /* HEADER */
 
 header {
-  height: 105vh;
+  height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -51,7 +51,6 @@ header span {
   font-weight: 900;
   font-style: italic;
   font-size: 1.8rem;
-  margin-bottom: 1em;
 }
 
 header span > span {
@@ -380,6 +379,15 @@ section.services footer p {
     margin-bottom: 1em;
   }
 
+
+  section.instagram h1 span:first-child {
+    font-size: 2rem;
+  }
+
+  section.instagram h1 span:not(:first-child) {
+    font-size: 1.3rem;
+  }
+
 }
 
 @media (max-width: 790px) {
@@ -404,7 +412,7 @@ section.services footer p {
 
 @media (max-width: 650px) {
   header img#social {
-    top: 1.5em;
+    top: 2em;
   }
 
   header img#heart2 {
