@@ -21,6 +21,7 @@ body {
   background-position: fixed;
   color: #111;
   font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
 }
 
 /* HEADER */
@@ -31,7 +32,6 @@ header {
 }
 
 .header {
-  position: relative;
   height: 100vh;
   width: 100%;
   max-width: 100vw;
@@ -88,8 +88,8 @@ header {
 }
 
 .header img#like3 {
-  top: 22em;
-  left: -1.2em;
+  top: 25em;
+  left: -2em;
   height: 18.75em;
   width: 18.75em;
   filter: blur(2px);
@@ -106,10 +106,10 @@ header {
 }
 
 .header img#heart2 {
-  top: 18.75em;
-  right: -17.5em;
-  height: 32.25em;
-  width: 32.25em;
+  top: 20.75em;
+  right: -15em;
+  height: 25.25em;
+  width: 25.25em;
   transform: rotate(-25deg);
   z-index: 1;
   filter: blur(5px);
@@ -416,6 +416,10 @@ section.services footer p {
 }
 
 @media (max-width: 650px) {
+  .header {
+    height: 75vh;
+  }
+
   .header img#social {
     top: 2em;
   }
@@ -429,6 +433,7 @@ section.services footer p {
 
   .header img#like3 {
     top: 22em;
+    left: -4em;
     height: 12.75em;
     width: 12.75em;
   }
